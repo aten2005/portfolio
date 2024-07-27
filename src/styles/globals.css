@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/poppins.ttf") format("ttf");
+  font-weight: 500;
+  font-display: swap;
+  letter-spacing: -0.05em;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 97.25%;
+    --foreground: 137.14 84% 4.9%;
+
+    --primary: 139.05 86.12% 48.04%;
+    --primary-foreground: 0 0% 12.55%;
+
+    --card: 0 0% 97.25%;
+    --card-foreground: 137.14 84% 4.9%;
+
+    --popover: 0 0% 97.25%;
+    --popover-foreground: 137.14 84% 4.9%;
+
+    --secondary: 138.75 80% 92.16%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 140 77.78% 94.71%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 138.75 80% 92.16%;
+    --accent-foreground: 139.05 86.12% 48.04%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90.2%;
+    --input: 0 0% 90.2%;
+    --ring: 139.05 86.12% 48.04%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 97.25%;
+
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 12.55%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 97.25%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 97.25%;
+
+    --secondary: 0 0% 12.55%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 9.8%;
+    --muted-foreground: 0 0% 50.2%;
+
+    --accent: 138.65 86.05% 16.86%;
+    --accent-foreground: 0 0% 97.25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 139.05 86.12% 48.04%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
