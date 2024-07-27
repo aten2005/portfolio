@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "@/components/landing/Header.tsx";
 import Hero from "@/components/landing/Hero.tsx";
-import Socials from "@/components/Socials.tsx";
 import "@/styles/globals.css";
 ---
 
@@ -33,9 +32,6 @@ import "@/styles/globals.css";
 <Layout title="Welcome to Astro.">
   <main class="w-full flex flex-col items-center h-max">
     <Header />
-    <div class="h-[calc(100dvh-5rem)]">
-      <Hero client:load />
-      <Socials />
-    </div>
+    <Hero client:load />
   </main>
 </Layout>
