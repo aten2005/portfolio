@@ -97,6 +97,11 @@
     font-family: "Poppins";
     letter-spacing: -0.05em !important;
   }
+
+  .montserrat {
+    font-family: "Montserrat";
+    letter-spacing: -0.05em !important;
+  }
 }
 
 @layer base {
