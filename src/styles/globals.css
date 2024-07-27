@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/montserrat.ttf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/poppins.ttf") format("ttf");
-  font-weight: 500;
-  font-display: swap;
-  letter-spacing: -0.05em;
-}
-
 @layer base {
+  @font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/montserrat.ttf");
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/poppins.ttf");
+    font-weight: 500;
+  }
+
   :root {
     --background: 0 0% 97.25%;
     --foreground: 137.14 84% 4.9%;
@@ -50,22 +48,22 @@
   }
 
   .dark {
-    --background: 0 0% 0%;
+    --background: 0 0% 4.31%;
     --foreground: 0 0% 97.25%;
 
-    --primary: 0 100% 50%;
-    --primary-foreground: 0 0% 12.55%;
+    --primary: 139.05 86.12% 48.04%;
+    --primary-foreground: 0 0% 4.31%;
 
-    --card: 0 0% 0%;
+    --card: 0 0% 4.31%;
     --card-foreground: 0 0% 97.25%;
 
-    --popover: 0 0% 0%;
+    --popover: 0 0% 4.31%;
     --popover-foreground: 0 0% 97.25%;
 
-    --secondary: 0 0% 12.55%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 138.65 86.05% 16.86%;
+    --secondary-foreground: 0 0% 97.25%;
 
-    --muted: 0 0% 9.8%;
+    --muted: 0 0% 12.55%;
     --muted-foreground: 0 0% 50.2%;
 
     --accent: 138.65 86.05% 16.86%;
@@ -74,11 +72,30 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
+    --border: 0 0% 12.55%;
+    --input: 0 0% 12.55%;
     --ring: 139.05 86.12% 48.04%;
 
     --radius: 0.5rem;
+  }
+
+  .font-outline-2 {
+    text-shadow:
+      -0.05rem -0.05rem 0 hsl(var(--primary)),
+      0.05rem 0.05rem 0 hsl(var(--primary)),
+      -0.05rem 0.05rem 0 hsl(var(--primary)),
+      0.05rem -0.05rem 0 hsl(var(--primary));
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 0.1rem hsl(var(--primary));
+  }
+  .font-outline-8 {
+    -webkit-text-stroke: 0.2rem hsl(var(--primary));
+  }
+
+  .poppins {
+    font-family: "Poppins";
+    letter-spacing: -0.05em !important;
   }
 }
 

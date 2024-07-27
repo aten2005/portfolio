@@ -10,13 +10,11 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        serif: [...defaultTheme.fontFamily.serif],
-        mono: [...defaultTheme.fontFamily.mono],
-        head: ["Poppins"],
-      },
+    fontFamily: {
+      sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      serif: [...defaultTheme.fontFamily.serif],
+      mono: [...defaultTheme.fontFamily.mono],
+      head: ["Poppins"],
     },
     container: {
       center: true,

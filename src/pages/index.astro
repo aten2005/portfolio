@@ -30,8 +30,8 @@ import "@/styles/globals.css";
 </script>
 
 <Layout title="Welcome to Astro.">
-  <main>
+  <main class="w-full flex flex-col items-center">
     <Header />
-    <Hero />
+    <Hero client:load />
   </main>
 </Layout>
