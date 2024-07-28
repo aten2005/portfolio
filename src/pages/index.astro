@@ -8,11 +8,11 @@ import "@/styles/globals.css";
 ---
 
 <Layout title="aten2005.dev">
-  <main class="w-full flex flex-col items-center h-max" transition:persist>
+  <main class="w-full flex flex-col items-center h-max">
     <Header />
-    <div class="h-[calc(100dvh-5rem)]">
-      <Hero client:load />
-      <Socials orientation="horizontal" transition:name="socials" />
+    <div class="h-[calc(100dvh-5rem)] flex flex-col justify-center">
+      <Hero client:load className="my-auto" />
+      <Socials orientation="horizontal" className="mt-auto mb-10" />
     </div>
   </main>
 </Layout>

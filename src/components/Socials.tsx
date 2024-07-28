@@ -8,15 +8,17 @@ import { cn } from "@/lib/utils";
 
 interface SocialsProps {
   orientation: "horizontal" | "vertical";
+  className: string;
 }
-export default function Socials({ orientation }: SocialsProps) {
+export default function Socials({ orientation, className }: SocialsProps) {
   return (
     <div
       className={cn(
-        "flex justify-center mt-24 ",
+        "flex justify-center",
         orientation == "horizontal"
           ? "flex-row space-x-5 md:space-x-9"
           : "flex-col space-y-5 md:space-y-9",
+        className,
       )}
     >
       <a href="https://linkedin.com/in/aten2005">
