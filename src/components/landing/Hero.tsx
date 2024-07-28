@@ -9,7 +9,7 @@ export default function Hero({ className }: HeroProps) {
   return (
     <div
       className={cn(
-        "flex flex-col items-center justify-around space-y-7 md:flex-row-reverse",
+        "flex flex-col items-center justify-around space-y-7 md:flex-row-reverse z-10",
         className,
       )}
     >
