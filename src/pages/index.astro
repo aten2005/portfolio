@@ -3,16 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import Header from "@/components/landing/Header.tsx";
 import Hero from "@/components/landing/Hero.tsx";
 import Socials from "@/components/Socials.tsx";
+import Skills from "@/components/landing/Skills.tsx";
+import Separator from "@/components/Separator.astro";
 import { ModeToggle } from "@/components/ModeToggle";
 import "@/styles/globals.css";
 ---
 
 <Layout title="aten2005.dev">
-  <main class="w-full flex flex-col items-center h-max">
-    <Header />
-    <div class="h-[calc(100dvh-5rem)] flex flex-col justify-center">
-      <Hero client:load className="my-auto" />
-      <Socials orientation="horizontal" className="mt-auto mb-10" />
+  <section class="bg-grid-white/[0.2]">
+    <div
+      class="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+    >
     </div>
-  </main>
+    <main class="w-full flex flex-col items-center h-max space-y-16">
+      <Header />
+      <div class="h-[calc(100dvh-9rem)] flex flex-col justify-center">
+        <Hero client:load className="my-auto" />
+        <Socials orientation="horizontal" className="mt-auto mb-10" />
+      </div>
+    </main>
+  </section>
 </Layout>

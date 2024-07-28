@@ -18,8 +18,8 @@ export default function Hero({ className }: HeroProps) {
         alt="profile"
         className="rounded-full w-64 md:w-[22rem] border-4 border-solid"
       />
-      <div className="md:mr-8">
-        <p className="text-4xl/[3.25rem] font-medium poppins md:text-5xl/[4.5rem] ">
+      <div className="md:mr-8 lg:mr-12">
+        <p className="text-4xl/[3.25rem] font-medium poppins md:text-5xl/[4.5rem] lg:text-6xl">
           Hey <img src={wave} alt="wave" className="h-8 md:h-12 inline-block" />
           <br />
           I'm{" "}

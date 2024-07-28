@@ -14,7 +14,7 @@ export default function Socials({ orientation, className }: SocialsProps) {
   return (
     <div
       className={cn(
-        "flex justify-center",
+        "flex justify-center z-10",
         orientation == "horizontal"
           ? "flex-row space-x-5 md:space-x-9"
           : "flex-col space-y-5 md:space-y-9",
