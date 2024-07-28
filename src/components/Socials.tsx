@@ -4,9 +4,21 @@ import twitter from "/icons/twitter.svg?url";
 import discord from "/icons/discord.svg?url";
 import instagram from "/icons/instagram.svg?url";
 import mail from "/icons/mail.svg?url";
-export default function Socials() {
+import { cn } from "@/lib/utils";
+
+interface SocialsProps {
+  orientation: "horizontal" | "vertical";
+}
+export default function Socials({ orientation }: SocialsProps) {
   return (
-    <div className="flex flex-row space-x-5 md:space-x-9 justify-center mt-24 ">
+    <div
+      className={cn(
+        "flex justify-center mt-24 ",
+        orientation == "horizontal"
+          ? "flex-row space-x-5 md:space-x-9"
+          : "flex-col space-y-5 md:space-y-9",
+      )}
+    >
       <a href="https://linkedin.com/in/aten2005">
         <img src={linkedin} alt="linkedin" className="h-6 md:h-8" />
       </a>
