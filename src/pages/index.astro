@@ -10,14 +10,19 @@ import "@/styles/globals.css";
 ---
 
 <Layout title="aten2005.dev">
-  <section class="bg-grid-white/[0.2]">
+  <section class="bg-grid-black/[0.2] dark:bg-grid-white/[0.2]">
     <div
       class="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
     >
     </div>
+    <div
+      class="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:linear-gradient(transparent_80%,black)]"
+    >
+    </div>
+
     <main class="w-full flex flex-col items-center h-max space-y-16">
-      <Header />
-      <div class="h-[calc(100dvh-9rem)] flex flex-col justify-center">
+      <Header client:load />
+      <div class="h-[calc(100svh-9rem)] flex flex-col justify-center">
         <Hero client:load className="my-auto" />
         <Socials orientation="horizontal" className="mt-auto mb-10" />
       </div>
