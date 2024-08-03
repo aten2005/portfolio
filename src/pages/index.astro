@@ -22,10 +22,15 @@ import "@/styles/globals.css";
 
     <main class="w-full flex flex-col items-center h-max space-y-16">
       <Header client:load />
-      <div class="h-[calc(100svh-9rem)] flex flex-col justify-center">
+      <div class="h-[calc(100svh-11rem)] flex flex-col justify-center">
         <Hero client:load className="my-auto" />
         <Socials orientation="horizontal" className="mt-auto mb-10" />
       </div>
     </main>
+  </section>
+  <section
+    class="w-full h-[50rem] bg-gradient-to-b from-white dark:from-black to-background to-50% px-5 pt-24 md:px-8 flex flex-col items-center"
+  >
+    <Skills />
   </section>
 </Layout>

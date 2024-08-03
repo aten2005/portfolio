@@ -2,7 +2,7 @@ import logo from "public/logo.svg";
 import { ModeToggle } from "@/components/ModeToggle";
 export default function Header() {
   return (
-    <div className="w-screen h-20 flex flex-row items-center justify-end max-w-screen-xl z-10">
+    <div className="w-screen h-28 flex flex-row items-center justify-end max-w-screen-xl z-10">
       <a href="/" className="mr-auto font-head ml-5 md:ml-8">
         <svg
           width="255"
