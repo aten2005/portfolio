@@ -24,7 +24,7 @@ export default function Header() {
       </a>
 
       <a
-        href="/projects"
+        href="https://drive.google.com/file/d/1g_KnkATEkZBysA8HB8grvkeDQg9Ic8O_/view?usp=sharing"
         className="text-lg font-sans montserrat hover:text-primary md:text-2xl"
       >
         Resume
@@ -32,7 +32,7 @@ export default function Header() {
 
       <a
         href="/projects"
-        className="text-lg font-sans montserrat hover:text-primary md:text-2xl"
+        className="text-lg ml-5 font-sans montserrat hover:text-primary md:text-2xl md:ml-10"
       >
         Projects
       </a>
