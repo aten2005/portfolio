@@ -22,6 +22,14 @@ export default function Header() {
           />
         </svg>
       </a>
+
+      <a
+        href="/projects"
+        className="text-lg font-sans montserrat hover:text-primary md:text-2xl"
+      >
+        Resume
+      </a>
+
       <a
         href="/projects"
         className="text-lg font-sans montserrat hover:text-primary md:text-2xl"
